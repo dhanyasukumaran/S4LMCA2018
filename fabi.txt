@@ -1,0 +1,52 @@
+mca@mca:~$ mkdir fathima
+mca@mca:~$ cd fathima
+mca@mca:~/fathima$ git config --global user.name "fathima"
+mca@mca:~/fathima$ git config --global user.email "fathimafabi03@gmail.com"
+mca@mca:~/fathima$  git init
+Initialized empty Git repository in /home/mca/fathima/.git/
+mca@mca:~/fathima$ git clone https://github.com/nirufabz/Accident-Detection.git
+Cloning into 'Accident-Detection'...
+warning: You appear to have cloned an empty repository.
+Checking connectivity... done.
+mca@mca:~/fathima$ git clone https://github.com/nirufabz/Accident-Notification.git
+Cloning into 'Accident-Notification'...
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+Checking connectivity... done.
+mca@mca:~/fathima$ git pull https://github.com/nirufabz/Accident-Notification.git
+
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/nirufabz/Accident-Notification
+ * branch            HEAD       -> FETCH_HEAD
+mca@mca:~/fathima$ git add .
+mca@mca:~/fathima$  git commit -m "fthima committed "
+[master 4ff7faf] fthima committed
+ 1 file changed, 1 insertion(+)
+ create mode 160000 Accident-Notification
+mca@mca:~/fathima$ git remote add origin https://github.com/nirufabz/Accident-Notification.git
+mca@mca:~/fathima$ git push origin master
+Username for 'https://github.com': fathimafabi
+Password for 'https://fathimafabi@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/nirufabz/Accident-Notification.git/'
+mca@mca:~/fathima$ git push origin master
+Username for 'https://github.com': fathima
+Password for 'https://fathima@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/nirufabz/Accident-Notification.git/'
+mca@mca:~/fathima$ git push origin master
+Username for 'https://github.com': fathimafabi03@gmail.com
+Password for 'https://fathimafabi03@gmail.com@github.com': 
+Counting objects: 2, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 274 bytes | 0 bytes/s, done.
+Total 2 (delta 0), reused 0 (delta 0)
+To https://github.com/nirufabz/Accident-Notification.git
+   bb577d9..4ff7faf  master -> master
+
+
+
